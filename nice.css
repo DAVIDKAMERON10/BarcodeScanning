@@ -1,0 +1,579 @@
+/* General Styles */
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-background {
+    background-image: url('homer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+   
+}
+
+.add-product-background {
+    background-image: url('added.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.edit-background {
+    background-image: url('edit.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.list-background {
+    background-image: url('list.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.delete-background {
+    background-image: url('add.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.history-background {
+    background-image: url('history.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.back {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 9px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    max-width: 600px;
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0a0a0a;
+font-family:arial;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    
+    margin-left: 13px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: large;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 3px solid #e60e0e;
+    border-radius: 4px;
+    box-sizing: border-box;
+    max-width: 900px; /* Adjust width as needed */
+}
+.inputer {
+    width: 95%;
+    padding: 8px;
+    margin-left: 12px;
+    margin-bottom: 20px;
+    border: 3px solid #e60e0e;
+    border-radius: 4px;
+    box-sizing: border-box;
+    max-width: 900px; /* Adjust width as needed */
+}
+
+.input1 {
+    width: 40%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 3px solid #e60e0e;
+    border-radius: 12px;
+    box-sizing: border-box;
+    max-width: 900px; /* Adjust width as needed */
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1px;
+    min-width: 130px;
+    position: relative;
+    cursor: pointer;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 9px;
+    box-shadow: inset 0 0 0 1px rgba(104, 62, 62, 0.1);
+    background: radial-gradient(
+        ellipse at top,
+        rgba(71, 81, 92, 1) 0%,
+        rgba(11, 21, 30, 1) 45%
+    );
+    color: rgb(255, 255, 255, 0.66);
+    transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.btn::before {
+    content: "";
+    width: 70%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0.2;
+    transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.btn:hover {
+    color: rgb(255, 255, 255, 1);
+    transform: scale(1.1) translateY(-3px);
+}
+
+.btn:hover::before {
+    opacity: 1;
+}
+
+.error-message {
+    color: rgb(255, 0, 0);
+    font-weight: bolder;
+}
+
+.error-message1 {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    margin-left: 11px;
+}
+
+.product-details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.product-details h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    margin: 5px 0;
+}
+
+.scanner-section,
+.product-management {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.refresh-form {
+    margin-top: 20px;
+}
+
+p {
+    color: #000000;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+h3 {
+    color: #000000;
+    font-weight:700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 13px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+table tr:hover {
+    background-color: #bbc3ca;
+    color: #333;
+}
+
+th {
+    padding: 10px;
+    background-color: rgba(146, 186, 247, 0.733);
+    border: 3px solid #080808;
+    color: #000000;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+td {
+    padding: 10px;
+    border: 3px solid #000000;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    font-family: arial;
+}
+
+.btn-small {
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.action-buttons .btn-small {
+    padding: 9px 17px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #b5df99; /* Adjust color as needed */
+    color: rgb(165, 47, 47);
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+.action-buttons .btn-small:hover {
+    background-color: #000000;
+    color: #f50303;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border: 3px solid #e60e0e;
+    border-radius: 9px;
+    margin-left: 137px;
+    max-width: 230px;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.search-container .search-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #1a1a1b;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 11px; /* Add margin-left to move the button to the right */
+}
+
+.search-container .search-button i {
+    margin-right: 5px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .back {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .input,
+    .btn,
+    .btn-small {
+        width: 100%;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.confirmation-prompt {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(49, 33, 33, 0.9);
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+    border-radius: 8px;
+}
+
+.confirmation-prompt p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.confirmation-prompt .btn {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirmation-prompt .confirm-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.confirmation-prompt .cancel-btn {
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.sortable {
+    cursor: pointer;
+}
+
+.sortable i {
+    margin-left: 5px;
+}
+
+.sortable.asc i::after {
+    content: "\f062";
+}
+
+.sortable.desc i::after {
+    content: "\f063";
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.pagination a,
+.btn-big {
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 12px 20px;
+    margin-left: -10px;
+    border-radius: 10px;
+    background-color: #1a1819;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.pagination a:hover {
+    background-color: #ddcbcb; /* Change background on hover */
+    color: #0f0f0f; /* Change text color on hover */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 8px; /* Some padding */
+    font-size: 16px; /* Font size */
+    border: none; /* Remove borders */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 7px;
+}
+
+
+.dropdown-content {
+    display: none;
+    border-radius: 7px;
+    position: absolute; /* Position it below the dropdown button */
+    background-color: #f9f9f9; /* White background */
+    min-width: 160px; /* Set a minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow effect */
+    z-index: 1; /* Sit on top */
+}
+
+.dropdown-content a {
+    color: black; /* Black text */
+    padding: 12px 16px; /* Some padding */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make links block elements */
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #e48d8d; 
+    border-radius: 1px;
+}
+
+/* Show the dropdown menu on button hover */
+.dropdown:hover .dropdown-content {
+    display: block; /* Show the dropdown */
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41; /* Darker green */
+}
+
+.btn12 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 13px;
+    min-width: 120px;
+    position: relative;
+    cursor: pointer;
+    padding: 12px 17px;
+    border: 0;
+    border-radius: 9px;
+    box-shadow: inset 1px rgba(104, 62, 62, 0.1);
+    background: radial-gradient(
+        ellipse at top,
+        rgb(240, 118, 118) 0%,
+        rgb(0, 0, 0) 60%
+    );
+    color: rgba(255, 250, 250, 0.66);
+    transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.btn12::before {
+    content: "";
+    width: 70%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0.2;
+    transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.btn12:hover {
+    color: rgb(253, 251, 251);
+    transform: scale(1.1) translateY(-3px);
+}
+
+.btn12:hover::before {
+    opacity: 1;
+}
+
+.btn2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 500px;
+    min-width: 100px;
+    position: relative;
+    cursor: pointer;
+    padding: 12px 30px;
+    border: 0;
+    border-radius: 9px;
+    box-shadow: inset 0 0 0 1px rgba(104, 62, 62, 0.1);
+    background: radial-gradient(
+        ellipse at top,
+        rgba(71, 81, 92, 1) 0%,
+        rgba(11, 21, 30, 1) 45%
+    );
+    color: rgb(255, 255, 255, 0.66);
+    transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.btn2::before {
+    content: "";
+    width: 70%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    opacity: 0.2;
+    transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.btn2:hover {
+    color: rgb(255, 255, 255, 1);
+    transform: scale(1.1) translateY(-3px);
+}
+
+.btn2:hover::before {
+    opacity: 1;
+}
